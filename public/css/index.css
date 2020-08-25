@@ -1,0 +1,58 @@
+/* Begin with mobile first */
+
+/* import fonts here*/
+@font-face {
+    font-family: "Avenir-Roman-12";
+    src: url("../fonts/Avenir-Roman-12.woff") format("woff");
+   }
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Avenir-Roman-12'; /*avenir roman 12 font added*/
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #040714;
+}
+
+
+/*Navbar section*/
+
+header{
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+}
+
+nav ul li{
+    margin-top: 0;
+}
+
+.img-container {
+    margin-top: 0;
+}
+
+.navLogo {
+    max-width: 10%;
+    display: none;
+}
+
+
+/* Main Section */
+main {
+    width: 100%;
+
+}
+
+/*First section 'Header' styles*/
+#header {
+    background: url('../images/olp_hero_mobile_UKI_FR.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+}
