@@ -40,22 +40,58 @@
     -o-background-size: 100%;
     background-size: 100%;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    align-content: center; }
-    #headerSection article.subHeaderSection1, #headerSection article.subHeaderSection2 {
-      margin-left: 6rem; }
+    align-items: flex-start; }
+    #headerSection article.firstHeaderArticle {
+      margin-left: 7rem;
+      margin-bottom: 2rem; }
+      #headerSection article.firstHeaderArticle figure img.logoHeader {
+        width: 35%;
+        padding-left: 0;
+        margin: initial; }
+      #headerSection article.firstHeaderArticle h1 {
+        font-size: 4rem;
+        margin-bottom: initial; }
+    #headerSection div.wrapHeadArticles {
+      display: flex; }
+      #headerSection div.wrapHeadArticles article.subHeaderSection1, #headerSection div.wrapHeadArticles article.subHeaderSection2 {
+        text-align: initial;
+        margin-left: 7rem;
+        padding-bottom: 0;
+        border-bottom: none; }
+        #headerSection div.wrapHeadArticles article.subHeaderSection1 p, #headerSection div.wrapHeadArticles article.subHeaderSection2 p {
+          padding-bottom: 2rem; }
+        #headerSection div.wrapHeadArticles article.subHeaderSection1 button.btnSectionHeader, #headerSection div.wrapHeadArticles article.subHeaderSection2 button.btnSectionHeader {
+          font-size: 1.6rem;
+          letter-spacing: .2rem;
+          border: none;
+          text-decoration: none;
+          color: #fff;
+          background-color: #0483EE;
+          padding: 1.8rem 2rem;
+          border-radius: .4rem; }
+        #headerSection div.wrapHeadArticles article.subHeaderSection1 h2, #headerSection div.wrapHeadArticles article.subHeaderSection2 h2 {
+          text-align: initial;
+          margin: 0; }
+      #headerSection div.wrapHeadArticles article.subHeaderSection2 {
+        align-self: flex-end;
+        margin-left: 2.8rem; }
     #headerSection article.subLastArticle p.subArticlePara {
+      width: 48%;
       text-align: left;
-      margin-left: 6rem; }
+      margin-left: 7rem;
+      margin-top: 2rem;
+      margin-bottom: 10rem;
+      font-size: .75em; }
     #headerSection article.subLastArticle figure {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       margin-left: 6rem; }
       #headerSection article.subLastArticle figure img.disneyFranchiseImage {
-        max-width: 50%;
+        width: 42%;
         display: initial; }
       #headerSection article.subLastArticle figure img.arrowRate {
         width: 2.8rem;
@@ -70,7 +106,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    height: 60rem; }
+    justify-content: space-around; }
     #divertissement figure {
       padding-top: 1.5rem; }
       #divertissement figure img.imgDynamicContent {
@@ -95,8 +131,7 @@
   #regarderOuQuand {
     text-align: center;
     display: flex;
-    flex-direction: row-reverse;
-    height: 60rem; }
+    flex-direction: row-reverse; }
     #regarderOuQuand figure {
       padding-top: 1.5rem; }
       #regarderOuQuand figure img.olpSide {
@@ -152,8 +187,7 @@
   #telecharger {
     text-align: center;
     display: flex;
-    flex-direction: row-reverse;
-    height: 60rem; }
+    flex-direction: row-reverse; }
     #telecharger figure {
       padding-top: 1.5rem; }
       #telecharger figure img.olpSideAvatar {
@@ -173,7 +207,7 @@
         text-align: left;
         margin-left: 0;
         margin-right: 0;
-        padding-left: 8rem;
+        padding-left: 5rem;
         line-height: 3rem; }
 
   /*Sixth section styles with 'accessibilite' id*/
