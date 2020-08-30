@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disney Plus web site">
+    <meta name="keywords" content="Science fiction, Action, Drama, Fantastique">
+    <meta name="author" content="Erdal">
     <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="./public/css/responsive.css">
@@ -11,39 +14,204 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <figure class="img-container">
-                <img class="navLogo" src="./public/images/logo-nopad.svg" alt="disney's logo">
-            </figure>
-            <ul>
-                <li><a href="#"></a>S'IDENTIFIER</li>
-            </ul>
-        </nav>
-    </header>
+<!--Ma navbar commence ici-->
+<header>
+    <nav>
+        <ul>
+            <li><img class="navLogo" src="./public/images/logo-nopad.svg" alt="disney's logo"></li>
+            <li><a href="#"></a>INSCRIVEZ-VOUS</li>
+            <li><a href="#"></a>S'IDENTIFIER</li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <section id="header">
+<!--mon main commence ici-->
+<main>
+    <!--ma prèmiere header section ici-->
+    <section id="headerSection">
+
+        <figure>
+            <img class="logoHeader" src="./public/images/logo-nopad.svg" alt="disney's logo">
+        </figure>
+
+        <article class="subHeaderSection1">
+            <h1>5 mondes. 1 destination.</h1>
+            <h2>6.99 € <span>par mois</span></h2>
+            <p>Sans engagement voir.* Voir conditions.**</p>
+            <button class="btnSectionHeader btn_01" role="button" aria-label="">REGARDEZ MAINTENANT</button>
+        </article>
+
+        <article class="subHeaderSection2">
+            <h2>69.99 € <span>pour un an</span></h2>
+            <p>Économisez plus de 15%. Voir conditions.**</p>
+            <button class="btnSectionHeader" role="button" aria-label="">ÉCONOMISER SUR 12 MOIS</button>
+        </article>
+
+        <article class="subLastArticle">
+            <p class="subArticlePara">*Résiliation effective à la fin de la période de facturation en cours.
+                **Comparatif entre 12 mois d'abonnement mensuel et l'abonnement annuel.
+            </p>
+
             <figure>
-                <img id="logoHeader" src="./public/images/logo-nopad.svg" alt="disney's logo">
+                <img class="disneyFranchiseImage" src="./public/images/disney-franchise-logos.png">
+                <img class="arrowRate" src="./public/images/arrow-rate.png">
             </figure>
-    
-            <h1></h1>
-        </section>
-        <section id="divertissement">
-        </section>
+        </article>
 
-        <section id="regarderOuQuand"></section>
+    </section>
 
-        <section id="nouveautes"></section>
+    <!--La section de divertissement commence ici-->
+    <section id="divertissement">
+        <figure>
+            <img class="imgDynamicContent" src="./public/images/EU_DynamicContentTile%5B2%5D.png">
+        </figure>
+        <article class="divertSubSec">
+            <h2>Du divertissement en continu</h2>
+            <p>Disney+ réunit Disney, Pixar, Marvel, Star Wars et National Geographic dans une destination. Des grands
+                succès aux inoubliables classiques sans oublier les séries, émissions et films exclusifs Disney+
+                Originals,
+                il y en a pour tous les goûts.</p>
+        </article>
+    </section>
 
-        <section id="telecharger"></section>
-        
-        <section id="accessibilite"></section>
-    </main>
+    <!--La section Regardez où et quand commence ici-->
+    <section id="regarderOuQuand">
+        <figure>
+            <img class="olpSide" src="./public/images/olp_side_align_devicelockup_fr-FR.jpg">
+        </figure>
+        <article class="regarderSubSec">
+            <h2>Regardez où et quand vous le voulez</h2>
+            <p>Profitez de Disney+ sur 4 écrans en simultané, en mobilité sur votre téléphone et tablette ou à la maison
+                sur
+                votre TV ; le tout en ultra haute définition sur une sélection de contenus.
+            </p>
+        </article>
+    </section>
 
-    <footer></footer>
+    <!--La section de nouveautés commence ici-->
+    <section id="nouveautes">
+        <figure>
+            <img class="frOlpOriginals" src="./public/images/FR_OLP1_originals_imagery_June_jpg.jpg">
+        </figure>
+        <article class="nouveautesSubSec">
+            <h2>De nouveaux Disney+ Originals tous les mois</h2>
+            <p>Des films, des séries et des documentaires créés par les artistes des studios Disney, Pixar, Marvel, Star
+                Wars et National Geographic, le tout exclusivement sur Disney+.
+            </p>
+        </article>
 
-    <script src="./public/js/script.js"></script>
+    </section>
+
+    <!--La section télécharger commence ici-->
+    <section id="telecharger">
+        <figure>
+            <img class="olpSideAvatar" src="./public/images/olp_side_align_avatar_english.jpg"
+                 alt="avatar image download">
+        </figure>
+        <article class="telechargerSubSec">
+            <h2>Téléchargez vos films et séries</h2>
+            <p>Téléchargez ce que vous voulez sur 10 appareils mobiles distincts pour le regarder quand vous le
+                souhaitez,
+                même dans les endroits où il n'y a pas de Wi-Fi.
+            </p>
+        </article>
+
+    </section>
+
+    <!--La section accessibilté commence ici -->
+    <section id="accessibilite">
+        <div class="accessTitle">
+            <h2>Accessible sur vos appareils préférés</h2>
+        </div>
+
+        <div class="accesWrap">
+            <article class="television">
+                <figure>
+                    <img class="deviceGroupImg" src="./public/images/device-group-tv.png">
+                </figure>
+                <section class="accesbilityFeatures">
+                    <h3>Télévisions</h3>
+                    <span>Amazon Fire TV</span>
+                    <span>Appareils Android TV</span>
+                    <span>AppleTV</span>
+                    <span>Chromecast</span>
+                    <span>TV LG</span>
+                    <span>Roku</span>
+                    <span>Samsung</span>
+                </section>
+            </article>
+
+            <article class="computer">
+                <figure>
+                    <img class="deviceGroupImg" src="./public/images/device-group-computer.png">
+                </figure>
+                <section class="accesbilityFeatures">
+                    <h3>Ordinateurs</h3>
+                    <span>Chrome OS</span>
+                    <span>MacOS</span>
+                    <span>PC Windows</span>
+                </section>
+
+            </article>
+
+            <article class="tablet">
+                <figure>
+                    <img class="deviceGroupImg" src="./public/images/device-group-mobile-tablet.png">
+                </figure>
+                <section class="accesbilityFeatures">
+                    <h3>Mobiles et tablettes</h3>
+                    <span>Tablettes Amazon Fire</span>
+                    <span>Mobiles et tablettes Android</span>
+                    <span>iPhone & iPad</span>
+                </section>
+
+            </article>
+
+            <article class="console">
+                <figure>
+                    <img class="deviceGroupImg" src="./public/images/device-group-game-consoles.png">
+                </figure>
+                <section class="accesbilityFeatures">
+                    <h3>Consoles de jeux</h3>
+                    <span>PS4</span>
+                    <span>Xbox One</span>
+                </section>
+
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<!--Mon Footer commence ici-->
+<footer>
+
+    <figure>
+        <img class="imgLogoFooter" src="public/images/logo-nopad.svg">
+    </figure>
+
+    <nav>
+        <ul>
+            <li><select>
+                <option>Français</option>
+                <option>Anglais</option>
+            </select></li>
+            <li><a href="#">Conditions générales d'abonnement</a></li>
+            <li><a href="#">Règles de Respect de la Vie Privée</a></li>
+            <li><a href="#">Droits Données dans l'UE et au R-U</a></li>
+            <li><a href="#">Modalités relatives aux cookies</a></li>
+            <li><a href="#">Publicités ciblées par centres d'intérêt</a></li>
+            <li><a href="#">Appareils compatibles</a></li>
+            <li><a href="#">Aide</a></li>
+            <li><a href="#">Gérer vos préférences</a></li>
+            <li><a href="#">À propos de Disney+</a></li>
+        </ul>
+    </nav>
+    <p>
+        © Disney. Tous droits réservés.
+    </p>
+</footer>
+
+<script src="./public/js/script.js"></script>
 </body>
 </html>

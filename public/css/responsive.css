@@ -1,0 +1,224 @@
+/* responsive for Desktop*/
+/*define button colors and backgroun-color variables*/
+/*paragraph and titles colors variables*/
+/*max-width variable*/
+@media screen and (min-width: 769px) {
+  /* Navbar section */
+  header {
+    color: #fff;
+    width: 100%; }
+    header nav {
+      position: absolute;
+      width: 100%; }
+      header nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2rem; }
+        header nav ul li {
+          list-style-type: none;
+          font-size: 1.5rem;
+          letter-spacing: .17rem;
+          padding: 1rem 0; }
+        header nav ul li:last-child {
+          border: 1px solid #f9f9f9;
+          background-color: rgba(19, 15, 15, 0.5);
+          padding: 1rem 1.5rem;
+          border-radius: .5rem; }
+        header nav ul li:nth-child(1n + 1) {
+          align-self: center; }
+        header nav ul li:nth-child(2) {
+          display: none; }
+        header nav ul .navLogo {
+          width: 25%;
+          display: none; }
+
+  /*First section 'Header' styles*/
+  #headerSection {
+    background: url("../images/olp_hero_desktop_UKI_FR.jpg") no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center; }
+    #headerSection article.subHeaderSection1, #headerSection article.subHeaderSection2 {
+      margin-left: 6rem; }
+    #headerSection article.subLastArticle p.subArticlePara {
+      text-align: left;
+      margin-left: 6rem; }
+    #headerSection article.subLastArticle figure {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 6rem; }
+      #headerSection article.subLastArticle figure img.disneyFranchiseImage {
+        max-width: 50%;
+        display: initial; }
+      #headerSection article.subLastArticle figure img.arrowRate {
+        width: 2.8rem;
+        height: 1.5rem; }
+
+  /* main styles here */
+  main section p {
+    font-size: 2rem; }
+
+  /*Second section styles with 'Divertissement' id */
+  #divertissement {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 60rem; }
+    #divertissement figure {
+      padding-top: 1.5rem; }
+      #divertissement figure img.imgDynamicContent {
+        max-width: 100%;
+        display: block;
+        margin: auto; }
+    #divertissement article h2 {
+      font-size: 3rem; }
+    #divertissement article.divertSubSec {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      #divertissement article.divertSubSec p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 3rem; }
+
+  /*Second section styles with 'regarderOuQuand' id */
+  #regarderOuQuand {
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60rem; }
+    #regarderOuQuand figure {
+      padding-top: 1.5rem; }
+      #regarderOuQuand figure img.olpSide {
+        max-width: 100%;
+        display: block;
+        margin: auto; }
+    #regarderOuQuand article.regarderSubSec {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap; }
+      #regarderOuQuand article.regarderSubSec h2 {
+        font-size: 3rem;
+        padding-left: 8rem;
+        text-align: initial; }
+      #regarderOuQuand article.regarderSubSec p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 8rem;
+        line-height: 3rem; }
+
+  /*Second section styles with 'Nouveautes' id */
+  #nouveautes {
+    text-align: center;
+    display: flex;
+    flex-direction: row; }
+    #nouveautes figure {
+      padding-top: 1.5rem; }
+      #nouveautes figure img.frOlpOriginals {
+        max-width: 100%;
+        display: block;
+        margin: auto; }
+    #nouveautes article.nouveautesSubSec {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      #nouveautes article.nouveautesSubSec p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 3rem; }
+      #nouveautes article.nouveautesSubSec h2 {
+        text-align: initial;
+        font-size: 3rem;
+        margin-right: 0;
+        margin-left: 0; }
+
+  /*Second section styles with 'regarderOuQuand' id */
+  #telecharger {
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60rem; }
+    #telecharger figure {
+      padding-top: 1.5rem; }
+      #telecharger figure img.olpSideAvatar {
+        max-width: 100%;
+        display: block;
+        margin: auto; }
+    #telecharger article.telechargerSubSec {
+      max-width: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap; }
+      #telecharger article.telechargerSubSec h2 {
+        font-size: 3rem;
+        text-align: initial; }
+      #telecharger article.telechargerSubSec p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 8rem;
+        line-height: 3rem; }
+
+  /*Sixth section styles with 'accessibilite' id*/
+  #accessibilite {
+    width: 100%; }
+    #accessibilite div.accessTitle {
+      display: flex;
+      justify-content: center; }
+      #accessibilite div.accessTitle h2 {
+        font-size: 4rem;
+        padding: 0; }
+    #accessibilite div.accesWrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 3rem; }
+      #accessibilite div.accesWrap figure {
+        margin: 0; }
+        #accessibilite div.accesWrap figure img.deviceGroupImg {
+          max-width: 100%; }
+      #accessibilite div.accesWrap article {
+        width: 25%; }
+        #accessibilite div.accesWrap article section.accesbilityFeatures {
+          height: 20rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          #accessibilite div.accesWrap article section.accesbilityFeatures span {
+            font-size: 1.4rem;
+            margin-top: 10px; }
+        #accessibilite div.accesWrap article span {
+          color: #868686; }
+
+  /* My footer style begin here*/
+  footer figure {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0; }
+    footer figure img.imgLogoFooter {
+      width: 10rem; }
+  footer p {
+    text-align: center;
+    color: #868686;
+    font-size: 1.3rem; }
+
+  /* End of media queries */ }
+
+/*# sourceMappingURL=responsive.css.map */
