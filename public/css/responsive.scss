@@ -15,7 +15,6 @@ $maxWidth: 100%;
 
 @media screen and (min-width: 769px) {
 
-
   /* Navbar section */
   header {
     color: #fff;
@@ -69,34 +68,84 @@ $maxWidth: 100%;
     -o-background-size: 100%;
     background-size: 100%;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    align-content: center;
 
-
-    article.subHeaderSection1, article.subHeaderSection2 {
-      margin-left: 6rem;
+    article.firstHeaderArticle {
+      margin-left: 7rem;
+      margin-bottom: 2rem;
+      figure {
+        img.logoHeader{
+          width: 35%;
+          padding-left: 0;
+          margin: initial;
+        }
+      }
+      h1 {
+        font-size: 4rem;
+        margin-bottom: initial;
+      }
     }
 
+    div.wrapHeadArticles {
+      display: flex;
+
+      article.subHeaderSection1, article.subHeaderSection2 {
+        text-align: initial;
+        margin-left: 7rem;
+        padding-bottom: 0;
+        border-bottom: none;
+
+        p {
+          padding-bottom: 2rem;
+        }
+
+        button.btnSectionHeader {
+          font-size: 1.6rem;
+          letter-spacing: .2rem;
+          border: none;
+          text-decoration: none;
+          color: $btnTextColor;
+          background-color: $btnColor;
+          padding: 1.8rem 2rem;
+          border-radius: .4rem;
+        }
+
+        h2 {
+          text-align: initial;
+          margin: 0;
+          //padding-bottom: .8rem;
+        }
+
+      }
+
+      article.subHeaderSection2 {
+        align-self: flex-end;
+        margin-left: 2.8rem;
+      }
+    }
 
     article.subLastArticle {
-
       p.subArticlePara {
+        width: 48%;
         text-align: left;
-        margin-left: 6rem;
+        margin-left: 7rem;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+        font-size: .75em;
       }
 
       figure {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-left: 6rem;
 
-
         img.disneyFranchiseImage {
-          max-width: $maxWidth / 2;
+          width: 42%;
           display: initial;
         }
 
@@ -106,6 +155,8 @@ $maxWidth: 100%;
         }
       }
     }
+
+
   }
 
   /* main styles here */
@@ -116,7 +167,7 @@ $maxWidth: 100%;
         font-size: 2rem;
       }
     }
-    
+
 
   }
 
@@ -127,7 +178,7 @@ $maxWidth: 100%;
     text-align: center;
     display: flex;
     flex-direction: row;
-    height: 60rem;
+    justify-content: space-around;
 
     figure {
       padding-top: 1.5rem;
@@ -170,7 +221,6 @@ $maxWidth: 100%;
     text-align: center;
     display: flex;
     flex-direction: row-reverse;
-    height: 60rem;
 
     figure {
       padding-top: 1.5rem;
@@ -256,7 +306,6 @@ $maxWidth: 100%;
     text-align: center;
     display: flex;
     flex-direction: row-reverse;
-    height: 60rem;
 
     figure {
       padding-top: 1.5rem;
@@ -284,7 +333,7 @@ $maxWidth: 100%;
         text-align: left;
         margin-left: 0;
         margin-right: 0;
-        padding-left: 8rem;
+        padding-left: 5rem;
         line-height: 3rem;
       }
     }

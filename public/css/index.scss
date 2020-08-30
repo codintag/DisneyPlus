@@ -19,13 +19,13 @@ $maxWidth: 100%;
 }
 
 html {
-  font-size: 10px;
+  font-size: 10px; // html element size to 10px;
   box-sizing: border-box;
   font-family: 'Avenir-Roman-12'; /* avenir roman 12 font added */
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.6rem; // rem = root em, my root element(html) is equal to 10px = 1rem, so 1.6rem = 16px;
   background-color: $bgColor;
 }
 
@@ -80,7 +80,7 @@ main {
       line-height: 2.2rem;
     }
 
-    h2, h1, h3 {
+    h2, h3 {
       color: $titleColors;
       margin: 0;
     }
@@ -96,7 +96,7 @@ main {
   -o-background-size: contain;
   background-size: contain;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   margin-bottom: 3rem;
 
   /* display flex for align contents inside my #header section*/
@@ -106,76 +106,91 @@ main {
   flex-direction: column;
   align-content: baseline;
 
-  figure {
-    margin: 0;
+  article.firstHeaderArticle {
+    figure {
+      margin: 0;
+      margin-left: -1rem;
+      width: 100%;
 
-    .logoHeader {
-      display: block;
-      width: 55%;
-      margin: auto;
+      .logoHeader {
+        display: block;
+        width: 50%;
+        margin: auto;
 
+      }
+
+    }
+    h1 {
+      color: $titleColors;
+      font-size: 2.2rem;
+      margin-bottom: .8rem;
     }
   }
 
-  article.subHeaderSection1, article.subHeaderSection2 {
-    /*display flex for align items*/
-    text-align: center;
 
-    button.btnSectionHeader {
-      font-size: 1.4rem;
-      letter-spacing: .2rem;
-      border: none;
-      text-decoration: none;
-      color: $btnTextColor;
-      background-color: $btnColor;
-      padding: 1.5rem 6rem;
-      border-radius: .4rem;
-    }
+  div.wrapHeadArticles {
 
-    p {
-      margin-bottom: 6px;
-      margin-top: 6px;
-    }
+    article.subHeaderSection1, article.subHeaderSection2 {
+      /*display flex for align items*/
+      text-align: center;
 
-    h2 {
-      margin: 1rem 0 0 0;
-
-      span {
-        color: $paraColors;
+      button.btnSectionHeader {
         font-size: 1.4rem;
+        letter-spacing: .2rem;
+        border: none;
+        text-decoration: none;
+        color: $btnTextColor;
+        background-color: $btnColor;
+        width: 100%;
+        padding: 1.6rem 4rem;
+        border-radius: .4rem;
+      }
 
+      p {
+        margin-bottom: .5rem;
+        margin-top: 0;
+        font-size: 1.3rem;
+      }
+
+      h2 {
+
+        span {
+          color: $paraColors;
+          font-size: 1.4rem;
+
+        }
+      }
+
+    }
+
+    article.subHeaderSection1 {
+      padding-bottom: 1.5rem;
+      border-bottom: .3px solid #444343;
+    }
+
+    article.subHeaderSection2 {
+      h2 {
+        margin: 1.5rem 0 0 0;
+      }
+
+      button.btn_01 {
+        padding: 1.6rem 4.5rem;
       }
     }
 
   }
 
-  article.subHeaderSection1 {
-    padding-bottom: 1.5rem;
-    border-bottom: .3px solid #444343;
-
-    button.btn_01 {
-      padding: 1.5rem 6.8rem;
-    }
-  }
-
-  article.subHeaderSection2 {
-    h2 {
-      margin: 1.5rem 0 0 0;
-    }
-  }
-
-
   article.subLastArticle {
-    font-size: 1rem;
     text-align: center;
     width: 90%;
-    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
     p.subArticlePara {
       font-weight: 900;
+      font-size: .9rem;
+      margin-top: 3rem;
     }
 
     figure {
@@ -187,6 +202,7 @@ main {
 
       img.arrowRate {
         width: 1.8rem;
+        margin-top: 2rem;
       }
     }
   }

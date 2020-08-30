@@ -47,7 +47,7 @@ main {
     color: #868686;
     font-size: 1.45rem;
     line-height: 2.2rem; }
-  main section h2, main section h1, main section h3 {
+  main section h2, main section h3 {
     color: #f9f9f9;
     margin: 0; }
 
@@ -59,7 +59,7 @@ main {
   -o-background-size: contain;
   background-size: contain;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   margin-bottom: 3rem;
   /* display flex for align contents inside my #header section*/
   display: flex;
@@ -67,54 +67,61 @@ main {
   align-items: center;
   flex-direction: column;
   align-content: baseline; }
-  #headerSection figure {
-    margin: 0; }
-    #headerSection figure .logoHeader {
+  #headerSection article.firstHeaderArticle figure {
+    margin: 0;
+    margin-left: -1rem;
+    width: 100%; }
+    #headerSection article.firstHeaderArticle figure .logoHeader {
       display: block;
-      width: 55%;
+      width: 50%;
       margin: auto; }
-  #headerSection article.subHeaderSection1, #headerSection article.subHeaderSection2 {
+  #headerSection article.firstHeaderArticle h1 {
+    color: #f9f9f9;
+    font-size: 2.2rem;
+    margin-bottom: .8rem; }
+  #headerSection div.wrapHeadArticles article.subHeaderSection1, #headerSection div.wrapHeadArticles article.subHeaderSection2 {
     /*display flex for align items*/
     text-align: center; }
-    #headerSection article.subHeaderSection1 button.btnSectionHeader, #headerSection article.subHeaderSection2 button.btnSectionHeader {
+    #headerSection div.wrapHeadArticles article.subHeaderSection1 button.btnSectionHeader, #headerSection div.wrapHeadArticles article.subHeaderSection2 button.btnSectionHeader {
       font-size: 1.4rem;
       letter-spacing: .2rem;
       border: none;
       text-decoration: none;
       color: #fff;
       background-color: #0483EE;
-      padding: 1.5rem 6rem;
+      width: 100%;
+      padding: 1.6rem 4rem;
       border-radius: .4rem; }
-    #headerSection article.subHeaderSection1 p, #headerSection article.subHeaderSection2 p {
-      margin-bottom: 6px;
-      margin-top: 6px; }
-    #headerSection article.subHeaderSection1 h2, #headerSection article.subHeaderSection2 h2 {
-      margin: 1rem 0 0 0; }
-      #headerSection article.subHeaderSection1 h2 span, #headerSection article.subHeaderSection2 h2 span {
-        color: #868686;
-        font-size: 1.4rem; }
-  #headerSection article.subHeaderSection1 {
+    #headerSection div.wrapHeadArticles article.subHeaderSection1 p, #headerSection div.wrapHeadArticles article.subHeaderSection2 p {
+      margin-bottom: .5rem;
+      margin-top: 0;
+      font-size: 1.3rem; }
+    #headerSection div.wrapHeadArticles article.subHeaderSection1 h2 span, #headerSection div.wrapHeadArticles article.subHeaderSection2 h2 span {
+      color: #868686;
+      font-size: 1.4rem; }
+  #headerSection div.wrapHeadArticles article.subHeaderSection1 {
     padding-bottom: 1.5rem;
     border-bottom: .3px solid #444343; }
-    #headerSection article.subHeaderSection1 button.btn_01 {
-      padding: 1.5rem 6.8rem; }
-  #headerSection article.subHeaderSection2 h2 {
+  #headerSection div.wrapHeadArticles article.subHeaderSection2 h2 {
     margin: 1.5rem 0 0 0; }
+  #headerSection div.wrapHeadArticles article.subHeaderSection2 button.btn_01 {
+    padding: 1.6rem 4.5rem; }
   #headerSection article.subLastArticle {
-    font-size: 1rem;
     text-align: center;
     width: 90%;
-    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
     #headerSection article.subLastArticle p.subArticlePara {
-      font-weight: 900; }
+      font-weight: 900;
+      font-size: .9rem;
+      margin-top: 3rem; }
     #headerSection article.subLastArticle figure img.disneyFranchiseImage {
       max-width: 100%;
       display: none; }
     #headerSection article.subLastArticle figure img.arrowRate {
-      width: 1.8rem; }
+      width: 1.8rem;
+      margin-top: 2rem; }
 
 /*Second section styles with 'Divertissement' id */
 #divertissement {
