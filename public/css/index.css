@@ -1,58 +1,260 @@
 /* Begin with mobile first */
-
+/*define button colors and backgroun-color variables*/
+/*paragraph and titles colors variables*/
+/*max-width variable*/
 /* import fonts here*/
 @font-face {
-    font-family: "Avenir-Roman-12";
-    src: url("../fonts/Avenir-Roman-12.woff") format("woff");
-   }
-
+  font-family: "Avenir-Roman-12";
+  src: url("../fonts/Avenir-Roman-12.woff") format("woff"); }
 html {
-    font-size: 10px;
-    box-sizing: border-box;
-    font-family: 'Avenir-Roman-12'; /*avenir roman 12 font added*/
-}
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: 'Avenir-Roman-12';
+  /* avenir roman 12 font added */ }
 
 body {
-    font-size: 1.6rem;
-    background-color: #040714;
-}
+  font-size: 1.6rem;
+  background-color: #040714; }
 
-
-/*Navbar section*/
-
-header{
-    color: #fff;
-    background-color: transparent;
-    width: 100%;
-}
-
-nav ul li{
-    margin-top: 0;
-}
-
-.img-container {
-    margin-top: 0;
-}
-
-.navLogo {
-    max-width: 10%;
-    display: none;
-}
-
+/* Navbar section */
+header {
+  color: #fff;
+  width: 100%; }
+  header nav {
+    position: absolute;
+    width: 100%; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2rem; }
+      header nav ul li {
+        list-style-type: none;
+        font-size: 1.5rem;
+        letter-spacing: .17rem;
+        padding: 1rem 0; }
+      header nav ul li:nth-child(1n + 1) {
+        align-self: center; }
+      header nav ul li:nth-child(2) {
+        display: none; }
+      header nav ul .navLogo {
+        width: 25%;
+        display: none; }
 
 /* Main Section */
 main {
-    width: 100%;
-
-}
+  width: 100%; }
+  main section p {
+    color: #868686;
+    font-size: 1.45rem;
+    line-height: 2.2rem; }
+  main section h2, main section h1, main section h3 {
+    color: #f9f9f9;
+    margin: 0; }
 
 /*First section 'Header' styles*/
-#header {
-    background: url('../images/olp_hero_mobile_UKI_FR.jpg') no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-width: 100%;
-    height: 100vh;
-}
+#headerSection {
+  background: url("../images/olp_hero_mobile_UKI_FR.jpg") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  height: 110vh;
+  margin-bottom: 3rem;
+  /* display flex for align contents inside my #header section*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  align-content: baseline; }
+  #headerSection figure {
+    margin: 0; }
+    #headerSection figure .logoHeader {
+      display: block;
+      width: 55%;
+      margin: auto; }
+  #headerSection article.subHeaderSection1, #headerSection article.subHeaderSection2 {
+    /*display flex for align items*/
+    text-align: center; }
+    #headerSection article.subHeaderSection1 button.btnSectionHeader, #headerSection article.subHeaderSection2 button.btnSectionHeader {
+      font-size: 1.4rem;
+      letter-spacing: .2rem;
+      border: none;
+      text-decoration: none;
+      color: #fff;
+      background-color: #0483EE;
+      padding: 1.5rem 6rem;
+      border-radius: .4rem; }
+    #headerSection article.subHeaderSection1 p, #headerSection article.subHeaderSection2 p {
+      margin-bottom: 6px;
+      margin-top: 6px; }
+    #headerSection article.subHeaderSection1 h2, #headerSection article.subHeaderSection2 h2 {
+      margin: 1rem 0 0 0; }
+      #headerSection article.subHeaderSection1 h2 span, #headerSection article.subHeaderSection2 h2 span {
+        color: #868686;
+        font-size: 1.4rem; }
+  #headerSection article.subHeaderSection1 {
+    padding-bottom: 1.5rem;
+    border-bottom: .3px solid #444343; }
+    #headerSection article.subHeaderSection1 button.btn_01 {
+      padding: 1.5rem 6.8rem; }
+  #headerSection article.subHeaderSection2 h2 {
+    margin: 1.5rem 0 0 0; }
+  #headerSection article.subLastArticle {
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #headerSection article.subLastArticle p.subArticlePara {
+      font-weight: 900; }
+    #headerSection article.subLastArticle figure img.disneyFranchiseImage {
+      max-width: 100%;
+      display: none; }
+    #headerSection article.subLastArticle figure img.arrowRate {
+      width: 1.8rem; }
+
+/*Second section styles with 'Divertissement' id */
+#divertissement {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 4.5rem; }
+  #divertissement figure {
+    padding-top: 1.5rem; }
+    #divertissement figure img.imgDynamicContent {
+      max-width: 100%;
+      display: block;
+      margin: auto; }
+  #divertissement h2 {
+    text-align: center; }
+  #divertissement p {
+    margin-left: 10%;
+    margin-right: 10%; }
+
+/* Third Section styles width 'regarderOuQuand' id */
+#regarderOuQuand {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 4.5rem; }
+  #regarderOuQuand figure {
+    padding-top: 1.5rem; }
+    #regarderOuQuand figure img.olpSide {
+      max-width: 100%;
+      display: block;
+      margin: auto; }
+  #regarderOuQuand h2 {
+    text-align: center; }
+  #regarderOuQuand p {
+    margin-left: 5%;
+    margin-right: 5%; }
+
+/* Fourth Section styles with 'nouveautes' id */
+#nouveautes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 4.5rem; }
+  #nouveautes figure {
+    padding-top: 1.5rem; }
+    #nouveautes figure img.frOlpOriginals {
+      width: 100%;
+      display: block;
+      margin: auto; }
+  #nouveautes h2 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%; }
+  #nouveautes p {
+    margin-left: 7%;
+    margin-right: 7%; }
+
+/* Fifth section styles with 'telecharger' id */
+#telecharger {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5.5rem; }
+  #telecharger figure {
+    padding-top: 1.5rem; }
+    #telecharger figure img.olpSideAvatar {
+      max-width: 100%;
+      display: block;
+      margin: auto; }
+  #telecharger h2 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%; }
+  #telecharger p {
+    margin-left: 5%;
+    margin-right: 5%; }
+
+/*Sixth section styles with 'accessibilite' id*/
+#accessibilite {
+  width: 100%;
+  padding-top: 4.8rem; }
+  #accessibilite div.accessTitle h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem; }
+  #accessibilite div.accesWrap {
+    display: flex;
+    flex-wrap: wrap; }
+    #accessibilite div.accesWrap figure {
+      margin: 0; }
+      #accessibilite div.accesWrap figure img.deviceGroupImg {
+        max-width: 100%; }
+    #accessibilite div.accesWrap article {
+      width: 50%; }
+      #accessibilite div.accesWrap article section.accesbilityFeatures {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #accessibilite div.accesWrap article section.accesbilityFeatures span {
+          font-size: 1.4rem;
+          margin-top: 10px; }
+      #accessibilite div.accesWrap article span {
+        color: #868686; }
+
+/* My footer style begin here*/
+footer figure {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0; }
+  footer figure img.imgLogoFooter {
+    width: 14%; }
+footer nav {
+  margin-left: 3%;
+  margin-right: 3%; }
+  footer nav ul {
+    padding: 0;
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    footer nav ul li {
+      list-style: none; }
+      footer nav ul li select {
+        background: none;
+        color: #868686;
+        border: none;
+        font-size: 1rem; }
+      footer nav ul li select::before {
+        content: "&#127760;";
+        color: #fff; }
+      footer nav ul li a {
+        text-decoration: none;
+        color: #868686;
+        font-size: 1.2rem; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,419 @@
+/* Begin with mobile first */
+
+/*define button colors and backgroun-color variables*/
+$btnTextColor: #fff;
+$btnColor: #0483EE;
+$bgColor: #040714;
+
+/*paragraph and titles colors variables*/
+$paraColors: #868686;
+$titleColors: #f9f9f9;
+
+/*max-width variable*/
+$maxWidth: 100%;
+
+/* import fonts here*/
+@font-face {
+  font-family: "Avenir-Roman-12";
+  src: url("../fonts/Avenir-Roman-12.woff") format("woff");
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: 'Avenir-Roman-12'; /* avenir roman 12 font added */
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $bgColor;
+}
+
+
+/* Navbar section */
+header {
+  color: #fff;
+  width: 100%;
+
+  nav {
+    position: absolute;
+    width: 100%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2rem;
+
+      li {
+        list-style-type: none;
+        font-size: 1.5rem;
+        letter-spacing: .17rem;
+        padding: 1rem 0;
+      }
+
+      li:nth-child(1n + 1) {
+        align-self: center;
+      }
+
+      li:nth-child(2) {
+        display: none;
+      }
+
+      .navLogo {
+        width: 25%;
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* Main Section */
+main {
+  width: 100%;
+
+  section {
+
+    p {
+      color: $paraColors;
+      font-size: 1.45rem;
+      line-height: 2.2rem;
+    }
+
+    h2, h1, h3 {
+      color: $titleColors;
+      margin: 0;
+    }
+  }
+
+}
+
+/*First section 'Header' styles*/
+#headerSection {
+  background: url('../images/olp_hero_mobile_UKI_FR.jpg') no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  height: 110vh;
+  margin-bottom: 3rem;
+
+  /* display flex for align contents inside my #header section*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  align-content: baseline;
+
+  figure {
+    margin: 0;
+
+    .logoHeader {
+      display: block;
+      width: 55%;
+      margin: auto;
+
+    }
+  }
+
+  article.subHeaderSection1, article.subHeaderSection2 {
+    /*display flex for align items*/
+    text-align: center;
+
+    button.btnSectionHeader {
+      font-size: 1.4rem;
+      letter-spacing: .2rem;
+      border: none;
+      text-decoration: none;
+      color: $btnTextColor;
+      background-color: $btnColor;
+      padding: 1.5rem 6rem;
+      border-radius: .4rem;
+    }
+
+    p {
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
+
+    h2 {
+      margin: 1rem 0 0 0;
+
+      span {
+        color: $paraColors;
+        font-size: 1.4rem;
+
+      }
+    }
+
+  }
+
+  article.subHeaderSection1 {
+    padding-bottom: 1.5rem;
+    border-bottom: .3px solid #444343;
+
+    button.btn_01 {
+      padding: 1.5rem 6.8rem;
+    }
+  }
+
+  article.subHeaderSection2 {
+    h2 {
+      margin: 1.5rem 0 0 0;
+    }
+  }
+
+
+  article.subLastArticle {
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    p.subArticlePara {
+      font-weight: 900;
+    }
+
+    figure {
+
+      img.disneyFranchiseImage {
+        max-width: $maxWidth;
+        display: none;
+      }
+
+      img.arrowRate {
+        width: 1.8rem;
+      }
+    }
+  }
+
+}
+
+/*Second section styles with 'Divertissement' id */
+
+#divertissement {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 4.5rem;
+
+  figure {
+    padding-top: 1.5rem;
+
+    img.imgDynamicContent {
+      max-width: $maxWidth;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin-left: 10%;
+    margin-right: 10%
+  }
+}
+
+/* Third Section styles width 'regarderOuQuand' id */
+
+#regarderOuQuand {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 4.5rem;
+
+  figure {
+    padding-top: 1.5rem;
+
+    img.olpSide {
+      max-width: $maxWidth;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin-left: 5%;
+    margin-right: 5%
+  }
+}
+
+/* Fourth Section styles with 'nouveautes' id */
+
+#nouveautes {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 4.5rem;
+
+  figure {
+    padding-top: 1.5rem;
+
+    img.frOlpOriginals {
+      width: $maxWidth;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%
+  }
+
+  p {
+    margin-left: 7%;
+    margin-right: 7%
+  }
+}
+
+/* Fifth section styles with 'telecharger' id */
+#telecharger {
+
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 5.5rem;
+
+  figure {
+    padding-top: 1.5rem;
+
+    img.olpSideAvatar {
+      max-width: $maxWidth;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%
+  }
+
+  p {
+    margin-left: 5%;
+    margin-right: 5%
+  }
+
+}
+
+/*Sixth section styles with 'accessibilite' id*/
+#accessibilite {
+  width: 100%;
+  padding-top: 4.8rem;
+
+  div.accessTitle {
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  div.accesWrap {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    figure {
+      margin: 0;
+
+      img.deviceGroupImg {
+        max-width: $maxWidth;
+      }
+
+    }
+
+    article {
+      width: 50%;
+
+      section.accesbilityFeatures {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          font-size: 1.4rem;
+          margin-top: 10px;
+        }
+      }
+
+      span {
+        color: $paraColors;
+      }
+    }
+  }
+}
+
+/* My footer style begin here*/
+footer {
+
+  figure {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+
+    img.imgLogoFooter {
+      width: 14%;
+    }
+  }
+
+  nav {
+    margin-left: 3%;
+    margin-right: 3%;
+
+    ul {
+      padding: 0;
+      height: 12rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        list-style: none;
+
+        select {
+          background: none;
+          color: $paraColors;
+          border: none;
+          font-size: 1rem;
+        }
+
+        select::before {
+          content: "&#127760;";
+          color: #fff;
+        }
+
+        a {
+          text-decoration: none;
+          color: $paraColors;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
