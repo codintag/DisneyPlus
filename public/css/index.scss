@@ -62,7 +62,7 @@ header {
         text-align: right;
 
         li {
-          display:flex;
+          display: flex;
           justify-content: center;
           align-items: center;
           text-align: right;
@@ -74,6 +74,7 @@ header {
             text-align: right;
           }
         }
+
         div.liwrapper {
           width: 100%;
           position: fixed;
@@ -82,11 +83,12 @@ header {
           left: 0;
           height: 8.5rem;
           background-color: rgba(19, 15, 15, 0.7);
+
           li:nth-child(1) {
             text-align: center;
             display: none;
             position: fixed;
-            bottom: 16px;
+            bottom: 1.6rem;
             right: 31%;
             left: 31%;
             border-radius: .5rem;
@@ -115,18 +117,17 @@ header {
     }
   }
 
-
-  .fix {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-radius: .5rem;
-    padding: 1.15rem 1.5rem;
-    margin-left: 5rem;
-    background-color: $btnColor;
-    margin-right: 2rem;
-  }
+  //.fix {
+  //  position: fixed;
+  //  bottom: 0;
+  //  right: 0;
+  //  left: 0;
+  //  border-radius: .5rem;
+  //  padding: 1.15rem 1.5rem;
+  //  margin-left: 5rem;
+  //  background-color: $btnColor;
+  //  margin-right: 2rem;
+  //}
 }
 
 
@@ -182,13 +183,13 @@ main {
       }
 
     }
+
     h1 {
       color: $titleColors;
       font-size: 2.2rem;
       margin-bottom: .8rem;
     }
   }
-
 
   div.wrapHeadArticles {
 
@@ -268,11 +269,9 @@ main {
       }
     }
   }
-
 }
 
 /*Second section styles with 'Divertissement' id */
-
 #divertissement {
 
   text-align: center;
@@ -444,6 +443,7 @@ main {
     }
   }
 }
+
 
 /* My footer style begin here*/
 footer {

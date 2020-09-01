@@ -63,7 +63,7 @@ header {
             text-align: center;
             display: none;
             position: fixed;
-            bottom: 16px;
+            bottom: 1.6rem;
             right: 31%;
             left: 31%;
             border-radius: .5rem;
@@ -79,16 +79,6 @@ header {
         -ms-transition: all 1s;
         -o-transition: all 1s;
         transition: all 1s; }
-  header .fix {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-radius: .5rem;
-    padding: 1.15rem 1.5rem;
-    margin-left: 5rem;
-    background-color: #0483EE;
-    margin-right: 2rem; }
 
 /* Main Section */
 main {

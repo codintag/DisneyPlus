@@ -5,6 +5,7 @@ let navLogo = document.querySelector('.navLogo');
 let sinscrire = document.querySelector('.inscrire');
 let liwrapper = document.querySelector('.liwrapper');
 
+//Event Listener for menu when scroll.
 this.addEventListener('scroll', () => {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         mobNav.style.top = "0";
@@ -23,10 +24,10 @@ this.addEventListener('scroll', () => {
         sinscrire.style.display = 'none';
         liwrapper.style.display = 'none';
 
-
     }
 });
 
+// when page bottom reached, button 'inscrivez-vous' dispear
 this.addEventListener('scroll', () => {
     if (window.innerHeight + window.scrollY > document.body.clientHeight) {
         liwrapper.style.display = 'none';
