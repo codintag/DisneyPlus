@@ -36,34 +36,96 @@ header {
   width: 100%;
 
   nav {
-    position: absolute;
     width: 100%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    position: -ms-device-fixed;
+    position: fixed;
 
     ul {
       display: flex;
       justify-content: space-between;
-      margin-right: 2rem;
+      margin-right: 1rem;
+      padding-left: 2rem;
 
       li {
         list-style-type: none;
         font-size: 1.5rem;
         letter-spacing: .17rem;
-        padding: 1rem 0;
+        padding: 1.1rem 0;
       }
 
-      li:nth-child(1n + 1) {
-        align-self: center;
+      div.menuLiwrapper {
+        text-align: right;
+
+        li {
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          text-align: right;
+          list-style-type: none;
+          font-size: 1.5rem;
+          letter-spacing: .17rem;
+          //padding: 1rem 0;
+          a {
+            text-align: right;
+          }
+        }
+        div.liwrapper {
+          width: 100%;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          height: 8.5rem;
+          background-color: rgba(19, 15, 15, 0.7);
+          li:nth-child(1) {
+            text-align: center;
+            display: none;
+            position: fixed;
+            bottom: 16px;
+            right: 31%;
+            left: 31%;
+            border-radius: .5rem;
+            padding: 1.65rem 1.5rem;
+            background-color: $btnColor;
+          }
+        }
+
       }
 
-      li:nth-child(2) {
-        display: none;
+      li:first-child {
+        padding: 0;
       }
 
       .navLogo {
         width: 25%;
         display: none;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
       }
+
+
     }
+  }
+
+
+  .fix {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: .5rem;
+    padding: 1.15rem 1.5rem;
+    margin-left: 5rem;
+    background-color: $btnColor;
+    margin-right: 2rem;
   }
 }
 
@@ -96,7 +158,7 @@ main {
   -o-background-size: contain;
   background-size: contain;
   width: 100%;
-  height: 100vh;
+  height: 104vh;
   margin-bottom: 3rem;
 
   /* display flex for align contents inside my #header section*/
@@ -114,7 +176,7 @@ main {
 
       .logoHeader {
         display: block;
-        width: 50%;
+        width: 60%;
         margin: auto;
 
       }
@@ -142,14 +204,14 @@ main {
         color: $btnTextColor;
         background-color: $btnColor;
         width: 100%;
-        padding: 1.6rem 4rem;
+        padding: 1.6rem 6rem;
         border-radius: .4rem;
       }
 
       p {
         margin-bottom: .5rem;
         margin-top: 0;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
 
       h2 {
@@ -189,7 +251,7 @@ main {
 
     p.subArticlePara {
       font-weight: 900;
-      font-size: .9rem;
+      font-size: 1rem;
       margin-top: 3rem;
     }
 
@@ -398,19 +460,23 @@ footer {
   }
 
   nav {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
 
     ul {
       padding: 0;
-      height: 12rem;
+      height: 15rem;
       display: flex;
-      justify-content: space-around;
+      flex-direction: row;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
 
+
       li {
         list-style: none;
+        margin-left: 2rem;
+        line-height: 2rem;
 
         select {
           background: none;
@@ -431,5 +497,12 @@ footer {
         }
       }
     }
+  }
+
+  p {
+    color: $paraColors;
+    font-size: 1.2rem;
+    text-align: center;
+
   }
 }

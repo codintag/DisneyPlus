@@ -8,26 +8,40 @@
     color: #fff;
     width: 100%; }
     header nav {
-      position: absolute;
       width: 100%; }
       header nav ul {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 2rem; }
-        header nav ul li {
-          list-style-type: none;
-          font-size: 1.5rem;
-          letter-spacing: .17rem;
-          padding: 1rem 0; }
-        header nav ul li:last-child {
-          border: 1px solid #f9f9f9;
-          background-color: rgba(19, 15, 15, 0.5);
-          padding: 1rem 1.5rem;
-          border-radius: .5rem; }
-        header nav ul li:nth-child(1n + 1) {
-          align-self: center; }
-        header nav ul li:nth-child(2) {
-          display: none; }
+        width: 100%; }
+        header nav ul div.menuLiwrapper {
+          width: 60%;
+          display: flex;
+          justify-content: flex-end; }
+          header nav ul div.menuLiwrapper li {
+            list-style-type: none;
+            font-size: 1.5rem;
+            letter-spacing: .17rem; }
+          header nav ul div.menuLiwrapper li:nth-child(2) {
+            display: initial;
+            border: 1px solid #f9f9f9;
+            background-color: rgba(19, 15, 15, 0.5);
+            padding: 1.15rem 1.5rem;
+            border-radius: .5rem;
+            margin-right: 5rem; }
+          header nav ul div.menuLiwrapper div.liwrapper {
+            position: initial;
+            width: 100%;
+            height: initial;
+            background-color: transparent;
+            margin-top: 1rem; }
+            header nav ul div.menuLiwrapper div.liwrapper li:nth-child(1) {
+              border-radius: .5rem;
+              padding: 1.15rem 1.5rem;
+              margin-left: 5rem;
+              background-color: #0483EE;
+              margin-right: 2rem;
+              position: initial; }
+        header nav ul li:first-child {
+          padding: 0;
+          text-align: left; }
         header nav ul .navLogo {
           width: 25%;
           display: none; }
@@ -234,6 +248,9 @@
           display: flex;
           flex-direction: column;
           align-items: center; }
+          #accessibilite div.accesWrap article section.accesbilityFeatures h3 {
+            padding: 2rem;
+            font-size: 2.2rem; }
           #accessibilite div.accesWrap article section.accesbilityFeatures span {
             font-size: 1.4rem;
             margin-top: 10px; }
@@ -241,6 +258,11 @@
           color: #868686; }
 
   /* My footer style begin here*/
+  footer nav {
+    margin-left: 0;
+    margin-right: 0; }
+    footer nav ul {
+      height: 8rem; }
   footer figure {
     text-align: center;
     width: 100%;
