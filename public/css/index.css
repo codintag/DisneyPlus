@@ -21,24 +21,64 @@ header {
   color: #fff;
   width: 100%; }
   header nav {
-    position: absolute;
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    position: -ms-device-fixed;
+    position: fixed; }
     header nav ul {
       display: flex;
       justify-content: space-between;
-      margin-right: 2rem; }
+      margin-right: 1rem;
+      padding-left: 2rem; }
       header nav ul li {
         list-style-type: none;
         font-size: 1.5rem;
         letter-spacing: .17rem;
-        padding: 1rem 0; }
-      header nav ul li:nth-child(1n + 1) {
-        align-self: center; }
-      header nav ul li:nth-child(2) {
-        display: none; }
+        padding: 1.1rem 0; }
+      header nav ul div.menuLiwrapper {
+        text-align: right; }
+        header nav ul div.menuLiwrapper li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: right;
+          list-style-type: none;
+          font-size: 1.5rem;
+          letter-spacing: .17rem; }
+          header nav ul div.menuLiwrapper li a {
+            text-align: right; }
+        header nav ul div.menuLiwrapper div.liwrapper {
+          width: 100%;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          height: 8.5rem;
+          background-color: rgba(19, 15, 15, 0.7); }
+          header nav ul div.menuLiwrapper div.liwrapper li:nth-child(1) {
+            text-align: center;
+            display: none;
+            position: fixed;
+            bottom: 1.6rem;
+            right: 31%;
+            left: 31%;
+            border-radius: .5rem;
+            padding: 1.65rem 1.5rem;
+            background-color: #0483EE; }
+      header nav ul li:first-child {
+        padding: 0; }
       header nav ul .navLogo {
         width: 25%;
-        display: none; }
+        display: none;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
 
 /* Main Section */
 main {
@@ -59,7 +99,7 @@ main {
   -o-background-size: contain;
   background-size: contain;
   width: 100%;
-  height: 100vh;
+  height: 104vh;
   margin-bottom: 3rem;
   /* display flex for align contents inside my #header section*/
   display: flex;
@@ -73,7 +113,7 @@ main {
     width: 100%; }
     #headerSection article.firstHeaderArticle figure .logoHeader {
       display: block;
-      width: 50%;
+      width: 60%;
       margin: auto; }
   #headerSection article.firstHeaderArticle h1 {
     color: #f9f9f9;
@@ -90,12 +130,12 @@ main {
       color: #fff;
       background-color: #0483EE;
       width: 100%;
-      padding: 1.6rem 4rem;
+      padding: 1.6rem 6rem;
       border-radius: .4rem; }
     #headerSection div.wrapHeadArticles article.subHeaderSection1 p, #headerSection div.wrapHeadArticles article.subHeaderSection2 p {
       margin-bottom: .5rem;
       margin-top: 0;
-      font-size: 1.3rem; }
+      font-size: 1.4rem; }
     #headerSection div.wrapHeadArticles article.subHeaderSection1 h2 span, #headerSection div.wrapHeadArticles article.subHeaderSection2 h2 span {
       color: #868686;
       font-size: 1.4rem; }
@@ -114,7 +154,7 @@ main {
     justify-content: space-around; }
     #headerSection article.subLastArticle p.subArticlePara {
       font-weight: 900;
-      font-size: .9rem;
+      font-size: 1rem;
       margin-top: 3rem; }
     #headerSection article.subLastArticle figure img.disneyFranchiseImage {
       max-width: 100%;
@@ -240,17 +280,20 @@ footer figure {
   footer figure img.imgLogoFooter {
     width: 14%; }
 footer nav {
-  margin-left: 3%;
-  margin-right: 3%; }
+  margin-left: 5%;
+  margin-right: 5%; }
   footer nav ul {
     padding: 0;
-    height: 12rem;
+    height: 15rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
     footer nav ul li {
-      list-style: none; }
+      list-style: none;
+      margin-left: 2rem;
+      line-height: 2rem; }
       footer nav ul li select {
         background: none;
         color: #868686;
@@ -263,5 +306,9 @@ footer nav {
         text-decoration: none;
         color: #868686;
         font-size: 1.2rem; }
+footer p {
+  color: #868686;
+  font-size: 1.2rem;
+  text-align: center; }
 
 /*# sourceMappingURL=index.css.map */

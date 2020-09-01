@@ -21,34 +21,65 @@ $maxWidth: 100%;
     width: 100%;
 
     nav {
-      position: absolute;
       width: 100%;
+      //-webkit-transition: all 1s;
+      //-moz-transition: all 1s;
+      //-ms-transition: all 1s;
+      //-o-transition: all 1s;
+      //transition: all 1s;
+      //position: fixed;
+      //position: -ms-device-fixed;
+
 
       ul {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 2rem;
+        //display: grid;
+        //grid-template-rows: 65% 13% 10% 10px;
+        //grid-template-columns: 49% 22% 17% 10px;
+        width: 100%;
 
-        li {
-          list-style-type: none;
-          font-size: 1.5rem;
-          letter-spacing: .17rem;
-          padding: 1rem 0;
+        div.menuLiwrapper {
+          width: 60%;
+          display: flex;
+          justify-content: flex-end;
+          li {
+            list-style-type: none;
+            font-size: 1.5rem;
+            letter-spacing: .17rem;
+
+          }
+
+          li:nth-child(2){
+            display: initial;
+            border: 1px solid $titleColors;
+            background-color: rgba(19, 15, 15, 0.5);
+            padding: 1.15rem 1.5rem;
+            border-radius: .5rem;
+            margin-right: 5rem;
+          }
+          div.liwrapper {
+            position: initial;
+            width: 100%;
+            height: initial;
+            background-color: transparent;
+            margin-top: 1rem;
+            li:nth-child(1) {
+              border-radius: .5rem;
+              padding: 1.15rem 1.5rem;
+              margin-left: 5rem;
+              background-color: $btnColor;
+              margin-right: 2rem;
+              position: initial;
+
+            }
+          }
+          
+
         }
 
-        li:last-child {
-          border: 1px solid $titleColors;
-          background-color: rgba(19, 15, 15, 0.5);
-          padding: 1rem 1.5rem;
-          border-radius: .5rem;
-        }
 
-        li:nth-child(1n + 1) {
-          align-self: center;
-        }
-
-        li:nth-child(2) {
-          display: none;
+        li:first-child {
+          padding: 0;
+          text-align: left;
         }
 
         .navLogo {
@@ -377,6 +408,11 @@ $maxWidth: 100%;
           flex-direction: column;
           align-items: center;
 
+          h3 {
+            padding: 2rem;
+            font-size: 2.2rem;
+          }
+
           span {
             font-size: 1.4rem;
             margin-top: 10px;
@@ -393,6 +429,15 @@ $maxWidth: 100%;
 
   /* My footer style begin here*/
   footer {
+
+    nav {
+      margin-left: 0;
+      margin-right: 0;
+
+      ul {
+        height: 8rem;
+      }
+    }
 
     figure {
       text-align: center;

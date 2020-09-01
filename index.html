@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Disney Plus web site">
-    <meta name="keywords" content="Science fiction, Action, Drama, Fantastique">
+    <meta name="keywords" content="Science fiction, Action, Drama, Fantastique, LucasArts, Star Wars, Marvel, Avengers">
     <meta name="author" content="Erdal">
+    <link rel="shortcut icon" href="./public/images/EU_DynamicContentTile%5B2%5D.png" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="./public/css/responsive.css">
@@ -16,11 +17,15 @@
 
 <!--Ma navbar commence ici-->
 <header>
-    <nav>
+    <nav id="nav">
         <ul>
             <li><img class="navLogo" src="./public/images/logo-nopad.svg" alt="disney's logo"></li>
-            <li><a href="#"></a>INSCRIVEZ-VOUS</li>
-            <li><a href="#"></a>S'IDENTIFIER</li>
+            <div class="menuLiwrapper">
+                <div class="liwrapper">
+                    <li class="inscrire"><a href="#"></a>INSCRIVEZ-VOUS</li>
+                </div>
+                <li><a href="#"></a>S'IDENTIFIER</li>
+            </div>
         </ul>
     </nav>
 </header>
@@ -130,6 +135,7 @@
         </div>
 
         <div class="accesWrap">
+            <!--television article begins here-->
             <article class="television">
                 <figure>
                     <img class="deviceGroupImg" src="./public/images/device-group-tv.png">
@@ -145,7 +151,7 @@
                     <span>Samsung</span>
                 </section>
             </article>
-
+            <!--computer article begins here-->
             <article class="computer">
                 <figure>
                     <img class="deviceGroupImg" src="./public/images/device-group-computer.png">
@@ -158,7 +164,7 @@
                 </section>
 
             </article>
-
+            <!--tablet article begins here-->
             <article class="tablet">
                 <figure>
                     <img class="deviceGroupImg" src="./public/images/device-group-mobile-tablet.png">
@@ -171,7 +177,7 @@
                 </section>
 
             </article>
-
+            <!--console article begins here-->
             <article class="console">
                 <figure>
                     <img class="deviceGroupImg" src="./public/images/device-group-game-consoles.png">
@@ -194,7 +200,7 @@
     <figure>
         <img class="imgLogoFooter" src="public/images/logo-nopad.svg">
     </figure>
-
+    <!-- my nav at the footer-->
     <nav>
         <ul>
             <li><select>
@@ -217,6 +223,7 @@
     </p>
 </footer>
 
+<!--scripts begins here-->
 <script src="./public/js/script.js"></script>
 </body>
 </html>
