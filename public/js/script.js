@@ -29,8 +29,10 @@ this.addEventListener('scroll', () => {
 
 // when page bottom reached, button 'inscrivez-vous' dispear
 this.addEventListener('scroll', () => {
-    if (window.innerHeight + window.scrollY > document.body.clientHeight) {
-        liwrapper.style.display = 'none';
-        sinscrire.style.display = 'none';
+    if(window.innerWidth < 769) {
+        if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+            liwrapper.style.display = 'none';
+            sinscrire.style.display = 'none';
+        }
     }
 });
