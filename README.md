@@ -1,4 +1,4 @@
-
+voir le rendu sur netlify => https://disneyproject.netlify.app/
 ## Mobile maquette
 ![alt text](https://github.com/codintag/DisneyPlus/blob/master/public/images/mobile.png)
 
